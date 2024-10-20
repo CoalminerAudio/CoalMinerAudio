@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Example</title>
+  <style>
+    /* Modal container */
+
+  </style>
+</head>
+<body>
+
+<!-- Button to open the popup -->
+<button id="openModalBtn">Show Popup</button>
+
+<!-- The modal/popup -->
+<div id="myModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <div id="modalBody">Content will be loaded here...</div>
+  </div>
+</div>
+
+<script>
+  // Get modal element and button
+  var modal = document.getElementById("myModal");
+  var btn = document.getElementById("openModalBtn");
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the button is clicked, load the external HTML and display the modal
+  btn.onclick = function() {
+    fetch('AboutKevin.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById("modalBody").innerHTML = data; // Inject the content
+        modal.style.display = "flex"; // Show the modal (now using flexbox)
+      })
+      .catch(error => console.error('Error loading the content:', error));
+  };
+
+  // When the close button is clicked, hide the modal
+  span.onclick = function() {
+    modal.style.display = "none";
+  };
+
+  // Close modal when clicking outside of it
+  window.onclick = function(event) {
+    if (event.target == modal) {
+      modal.style.display = "none";
+    }
+  };
+</script>
+
+</body>
+</html>

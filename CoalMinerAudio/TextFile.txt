@@ -1,0 +1,57 @@
+Audio Serendipiter
+
+Randomly modulates a parameter of an audio plugin between two user-set percentages. Lets the user control any fx or plugin parameter across any track, or even multiple parameters on the same plugin or multiple fx on the same track!
+
+-
+
+Region Matrix Clear and Set
+
+A collection of three scripts - one clears the current region matrix, one sets the region matrix based off the currently time and track selection, and one does both for an easy way to set which regions to render.
+
+-
+
+Explode Items to new Lanes
+
+An easy way to take advantage of the lanes feature in Reaper 7. Set all needed media items on one track, select them, and the script will create a new track lane for each item. Each track lane's media item will start at the same time as the earliest selected item, and be set to a color gradient based off the tracks starting color.
+
+-
+
+Lane Shuffle
+
+Need help getting an idea what a Wwise random container will feel like prior to a render? This script will shuffle through track lanes in a selected track randomly, select multiple tracks to get a sense of randomization between different layers of a sound.
+
+-
+
+Midi Circle (in progress)
+
+Similar to an XY slider, but built around a circle instead. Select which parameters you want to control in a track (volume, pan, or a parameter from a plugin) and then select how your mouses position in the circle controls that parameter (X axis, Y axis, Distance to center, or the angle to the center of the circle) when the mouse leaves the circle, the value will revert to the value when the mouse first entered the circle. 
+
+--- Game audio ---
+
+AmbiTag
+
+Automatically trigger and de-trigger ambiences in the game world using custom UAsset types and gameplaytags. Built to work with Unreal 5.4 and Wwise, Fmod, or Unreal's base audio system.
+
+-
+
+Audio based Lockpicking Minigame
+
+Lockpicking based solely on the audio feedback from interaction with a dial. Audio changes as the dial is within 1 value of the correct answer using switch and blend containers. Built in UE5 with Wwise. 
+
+-
+
+Dynamic Reverb
+
+Dynamically control reverb parameters in Wwise and Fmod based on physic rays cast from an actor component on a player. Can easily be tied to other game parameters as well.
+
+-
+
+Touch OSC Audio Mixing
+
+Dynamically control Unreal Audio Modulation values based on the touch of a button from TouchOSC. Control Busses, Control Bus Mixes, and even triggering audio and animations in the world for debugging is now as easy as the touch of a button!
+
+-
+
+Metasound Essentials Pack
+
+A collection of metasound patches and presets to speed up the workflow of jumping into a new Unreal project. Comes with a showcase Metasound for testing each individual patch. 

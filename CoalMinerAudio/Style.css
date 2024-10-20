@@ -1,0 +1,648 @@
+body
+{
+    margin: 0;
+
+}
+
+.about-page
+{
+    background: none;
+}
+
+.main-container h1, h2, h3, h4
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/* Reset margins and padding */
+.cma-logo html, body 
+{
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body and html cover the full viewport */
+}       
+
+.background-image 
+{
+
+    height: auto; /* Full viewport height */
+    background-size: cover; /* Ensures the background covers the entire section */
+    background-repeat:repeat-x; /* Prevent background repetition */
+    overflow-x: hidden;
+}
+
+/* First image as background for the first section */
+.forest 
+{
+    height: 1400px;
+    background-image: url('./Assets/Backgrounds/Forest_Background_Cropped.png');
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: flex-start; /* Centers vertically */
+    background-position: center;
+}
+
+/* Second image as background for the second section */
+.dirt 
+{
+    height: 2000px;
+    background-image: url('./Assets/Backgrounds/Dirt_Background.png');
+}
+
+.toolbar
+{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    z-index: 50;
+}
+
+.audio-tech-cart:hover
+{
+    content: url('./Assets/Carts/Carts_WhiteSelect/TechCartWhiteSelect.png');
+}
+
+.team-cart:hover
+{
+    content: url('./Assets/Carts/Carts_WhiteSelect/TeamCartWhtSelect.png');
+}
+
+.jam-cart:hover
+{
+    content: url('./Assets/Carts/Carts_WhiteSelect/JamsCartWhtSelect.png');
+}
+
+.redesign-cart:hover
+{
+    content: url('./Assets/Carts/Carts_WhiteSelect/ReDesignCartWhtSelect.png');
+}
+
+.logo-container
+{
+    height: 250px;
+    width: 250px;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute; /* Absolute positioning within the .forest container */
+    top: 30%; /* Position 1/4 (25%) from the top of the container */
+    border-radius: 50%;
+    border: 2px solid black;
+}
+
+.cma-logo
+{
+    height: 100px;
+    width: 100px;
+    margin: 0;
+}
+
+.logo-message h2, h3, h4
+{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar img
+{
+    height: 175px;
+}
+
+
+
+
+
+.temple-border
+{
+    width: 100vw;
+}
+
+.content-container
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 180vh;
+    flex-shrink: 1;
+}
+
+.content-block
+{
+
+    width: 70vw;
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+    
+}
+
+.content-icon img
+{
+    width: 240px;
+    flex-shrink: 1;
+}
+
+.content
+{
+    background-color: gray;
+    border: 5px solid black;
+    height: 245px;
+    width: 100%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.content-info
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; /* Ensure vertical centering */
+    width: 100%; /* Ensure full container width usage */
+
+}
+
+.content-text
+{
+    width: 200px;
+}
+
+.reverse
+{
+    flex-direction: row-reverse;
+}
+
+.vertical-spacer
+{
+    width: 5px;
+    height: 100%;
+    background-color: black;
+}
+
+.vertical-spacer-small
+{
+    width: 5px;
+    height: 250px;
+    background-color: black;
+    margin: 25px;
+}
+.youtube-vid
+{
+    border-radius: 50px;
+    height: 200px;
+    width: 295px;
+}
+
+.section-icon img
+{
+    height: 200px;
+}
+
+.right-allign
+{
+    text-align: right;
+}
+
+.circle-link
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    background-color:#52361a;
+}
+
+.small-icon
+{
+    height: 150px;
+    transition: transform 1s;
+}
+
+.eliv8
+{
+    background-image: url('./Assets/PortfolioPics/EV8.jpg');
+}
+
+.package
+{
+    background-image: url('./Assets/PortfolioPics/404.jpg');
+}
+
+.lense
+{
+    background-image: url('./Assets/PortfolioPics/MWH.png');
+}
+
+.jam-icon
+{
+    background-position: center;
+    transition: transform 1s;
+}
+
+
+
+.footer-main {
+    position: absolute;
+    background-image: url("./Assets/Backgrounds/TempleFull.png");
+    
+    /* Set the container to be full width */
+    width: 100%;
+    height: 100vh;
+
+    /* Ensure the image scales to fit the entire width of the viewport */
+    background-size: cover;  /* Set the width to 100% of the viewport, height adjusts automatically */
+    background-repeat: no-repeat; /* Avoid repetition */
+    background-position: top center; /* Align the image to the top and center it horizontally */
+
+    /* Adjust the height to allow the image to maintain its aspect ratio */
+
+    overflow-x: hidden;
+    
+    bottom: -70vh;
+}
+
+
+.footer-container
+{
+    position: relative;
+
+    padding: 0;
+    margin: 0;
+}
+
+
+.footer-portals
+{
+    position: absolute; /* Position portals relative to footer */
+    width: 100vw;
+    top: 57%; /* Adjust this as needed to control the vertical placement inside the footer */
+    transform: translateY(-50%); /* Center vertically */
+    display: flex;
+    justify-content: center;
+    gap: 15vw; /* Adjust for spacing between portals */
+}
+
+.portal
+{
+    width: 200px;
+
+}
+
+
+.demo-content
+{
+    background-color: gray;
+    border: 5px solid black;
+    height: 92%;
+    width: 800%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+}
+
+.demo-vid img, iframe
+{
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 275px;
+    aspect-ratio: 16/9;
+    background-color: black;
+}
+
+.demo-descripition
+{
+    height: 275px;
+    width: 800px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.demo-title
+{
+
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.demo-summary
+{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.demo-summary p
+{
+   margin: 10px;
+}
+
+.overview-header
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview-header-content
+{
+    background-color: gray;
+    border: 5px solid black;
+    height: 150px;
+    width: 50%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.button
+{
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #b66514;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+}
+
+.button-link
+{
+    
+    text-decoration: none; /* Removes the underline */
+    color: inherit; /* Keeps the color of the text the same as the parent element */
+}
+
+.overview-header-content img
+{
+    height: 125px;
+}
+
+.about-background
+{
+    height: 100%;
+}
+
+.about-content-container
+{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.about-content
+{
+    background-color: gray;
+    border: 5px solid black;
+    height: 60%;
+    width: 80%;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.about-pic
+{
+    border-radius: 50px;
+    height: 90%;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*background-color: black;*/
+}
+
+.about-pic img
+{
+    border: 2px solid black;
+    border-radius: 50px;
+    height: 100%;
+    width: auto
+    
+}
+
+.willow
+    {
+        height: 80%;
+    }
+
+.about-descripition
+{
+    background-color:darkgray;
+    border: 2px solid black;
+    border-radius: 50px;
+    width: 65%;
+    height: 75%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.about-column
+{
+    background-color: blue;
+    width: 50%;
+    height: 99%;
+    
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    align-items: center;
+
+    p, h2
+    {
+        text-align: center;
+    }
+    li
+    {
+        font-size:larger;
+        margin: 5p;
+    }
+    p
+    {
+        font-size: large;
+    }
+}
+
+.about-title
+{
+    background-color: green;
+    width: 95%;
+    height: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p, h2
+    {
+        text-align: center;
+    }
+}
+
+.about-int
+{
+    margin: 5px;
+}
+
+.about-summary
+{
+    background-color: gold;
+    height: 75%;
+    width: 95%;
+    
+}
+
+.about-list
+{
+    background-color: silver;
+    height: 50%;
+    width: 95%;
+    display: flex;
+
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.about-points
+{
+    background-color: aqua;
+    height: 75%;
+    width: 100%;
+    display: flex;
+
+    justify-content: space-evenly;
+}
+
+.about-points, .about-list, .about-summary, .about-title, .about-column
+{
+    background: none;
+}
+
+@media only screen and (max-width: 1700px)
+{
+    .footer-portals
+    {
+        top: 48%;
+    }
+}
+
+
+
+
+/* Gallery images */
+.gallery-image {
+    width: 100px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  /*
+  .modal-content {
+    background: none;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 100%;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    overflow-y: scroll;
+    }
+    */
+
+    /* Modal content styling */
+    .modal-content {
+        background: none; /* Keep your original background setting */
+        padding: 20px;
+        border: 1px solid #888;
+        width: 100%;
+        max-height: 100%; /* Set a max height to enable scrolling */
+        overflow-y: scroll; /* Enable vertical scrolling */
+        scrollbar-width: none; /* For Firefox */
+        -ms-overflow-style: none; /* For Internet Explorer and Edge */
+        box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.2);
+        z-index: 100;
+      }
+      
+      /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+      .modal-content::-webkit-scrollbar {
+        display: none; /* Hide the scrollbar */
+      }
+  
+  /* Hide scrollbar for WebKit browsers (Chrome, Safari) */
+  .modal-content::-webkit-scrollbar {
+    display: none; /* Hide the scrollbar */
+  }
+
+  /* Close button */
+  .close {
+    position: absolute;
+    top: 25%;
+    right: 5%;
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    z-index: 101;
+  }
+
+  .close:hover, .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

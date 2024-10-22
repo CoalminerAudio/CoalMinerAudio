@@ -87,26 +87,6 @@ p
     z-index: 50;
 }
 
-.audio-tech-cart:hover
-{
-    content: url('./Assets/Carts/Carts_WhiteSelect/TechCartWhiteSelect.png');
-}
-
-.team-cart:hover
-{
-    content: url('./Assets/Carts/Carts_WhiteSelect/TeamCartWhtSelect.png');
-}
-
-.jam-cart:hover
-{
-    content: url('./Assets/Carts/Carts_WhiteSelect/JamsCartWhtSelect.png');
-}
-
-.redesign-cart:hover
-{
-    content: url('./Assets/Carts/Carts_WhiteSelect/ReDesignCartWhtSelect.png');
-}
-
 .logo-container
 {
     height: 350px;
@@ -485,9 +465,9 @@ p
 }
 
 .willow
-    {
-        height: 80%;
-    }
+{
+    height: 80%;
+}
 
 .about-descripition
 {
@@ -677,4 +657,17 @@ p
     color: black;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  @media(max-width: 720px)
+  {
+    #toolbar
+    {
+        flex-wrap: wrap;
+    }
+
+    #toolbar img
+    {
+        height: 125px;
+    }
   }

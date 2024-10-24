@@ -94,8 +94,8 @@ p
 
 .logo-container
 {
-    height: 350px;
-    width: 350px;
+    height: 19vw;
+    width: 19vw;
     z-index: 2;
     display: flex;
     flex-direction: column;
@@ -109,8 +109,8 @@ p
 
 .cma-logo
 {
-    height: 100px;
-    width: 100px;
+    height: 25%;
+    width: 25%;
     margin: 0;
 }
 
@@ -177,7 +177,7 @@ p
 {
     background-color: gray;
     border: 5px solid black;
-    height: 100%;
+    height: 25vh;
     width: 100%;
     border-radius: 50px;
     display: flex;
@@ -194,6 +194,7 @@ p
     justify-content: center;
     align-items: center; /* Ensure vertical centering */
     width: 100%; /* Ensure full container width usage */
+    height: 100%;
     
 }
 
@@ -226,18 +227,23 @@ p
     margin: 25px;
 }
 
-.vid-wrap
+.vid-wrap, .redesign-vid-wrap
 {
-    width: 100%;
-    aspect-ratio: 16 / 9; /* Maintain 16:9 aspect ratio */
-    background-color: blue;
+    margin: 5px;
+    height: 90%;
+    display: flex;
+}
+
+.redesign-vid-wrap
+{
+    width: 30%;
 }
 
 .youtube-vid
 {
-    
-    height: 100%;
+    aspect-ratio: 16/9;
     width: 100%;
+    border-radius: 50px;
 }
 
 .section-icon img
@@ -358,15 +364,6 @@ p
     align-items: center;
     justify-content: center;
     gap: 5px;
-}
-
-.demo-vid img, iframe
-{
-    border: 2px solid black;
-    border-radius: 50px;
-    height: 275px;
-    aspect-ratio: 16/9;
-    background-color: black;
 }
 
 .demo-descripition

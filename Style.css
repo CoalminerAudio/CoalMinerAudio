@@ -9,12 +9,14 @@ h1
     font-family: "Roboto Condensed", sans-serif;
     font-weight: bold;
     font-size: 1.5vw;
+    font-size: clamp(20px, 1.5vw, 40px)
 }
 
 h2
 {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 1.75vw;
+    font-size: clamp(15px, 1.75vw, 25px);
     font-weight: bold;
 }
 
@@ -23,25 +25,41 @@ h3
     font-family: "Roboto Condensed", sans-serif;
     font-weight: 500;
     font-size: 1vw;
+    font-size: clamp(10px, 1vw, 20px);
+}
+
+ul
+{
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 450;
+    font-size: clamp(10px, 1vw, 18px);
 }
 
 p
 {
     font-family: "Roboto Condensed", sans-serif;
-    font-size: large;
-    font-weight: 100;
-    font-weight: 500;
+    font-weight: 350;
+    font-size: clamp(10px, 1vw, 18px);
 }
 
 .about-page
 {
     background: none;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
 }
 
 .main-container h1, h2, h3, h4
 {
     margin-left: 5px;
     margin-right: 5px;
+}
+
+.main-container
+{
+    background-color: aqua;
 }
 
 /* Reset margins and padding */
@@ -105,6 +123,9 @@ p
     top: 30%; /* Position 1/4 (25%) from the top of the container */
     border-radius: 50%;
     border: 2px solid black;
+
+    min-width: 250px;
+    min-height: 250px;
 }
 
 .cma-logo
@@ -125,9 +146,6 @@ p
 {
     height: 150px;
 }
-
-
-
 
 
 .temple-border
@@ -165,12 +183,12 @@ p
 .content-icon
 {
     width: 25%;
+    min-width: 150px;
 }
 
 .content-icon img
 {
     width: 90%;
-    flex-shrink: 1;
 }
 
 .content
@@ -178,6 +196,7 @@ p
     background-color: gray;
     border: 5px solid black;
     height: 25vh;
+    min-width: 450px;
     width: 100%;
     border-radius: 50px;
     display: flex;
@@ -234,6 +253,14 @@ p
     display: flex;
 }
 
+.img-wrap
+{
+    width: 40%;
+    margin: 5px;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+}
 .redesign-vid-wrap
 {
     width: 30%;
@@ -243,6 +270,20 @@ p
 {
     aspect-ratio: 16/9;
     width: 100%;
+    border-radius: 50px;
+}
+
+.demo-vid
+{
+    aspect-ratio: 16/9;
+    width: 80%;
+    border-radius: 50px;
+    
+}
+
+.demo-img
+{
+    width: 80%;
     border-radius: 50px;
 }
 
@@ -278,7 +319,7 @@ p
     max-height: 75%;
     max-width: 75%;
     height: auto;
-    transition: transform 1s;
+    transition: transform 0.5s;
 }
 
 .eliv8
@@ -315,7 +356,7 @@ p
 
     /* Ensure the image scales to fit the entire width of the viewport */
     background-size: cover;  /* Set the width to 100% of the viewport, height adjusts automatically */
-    background-repeat: no-repeat; /* Avoid repetition */
+    background-repeat: repeat-x;
     background-position: top center; /* Align the image to the top and center it horizontally */
 
     /* Adjust the height to allow the image to maintain its aspect ratio */
@@ -349,7 +390,6 @@ p
 .portal
 {
     width: 200px;
-
 }
 
 
@@ -358,7 +398,7 @@ p
     background-color: gray;
     border: 5px solid black;
     height: 92%;
-    width: 800%;
+    width: 100%;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -399,8 +439,7 @@ p
    margin: 10px;
 }
 
-.overview-header
-{
+.overview-header {
     margin-top: 50px;
     margin-bottom: 50px;
     display: flex;
@@ -408,16 +447,15 @@ p
     justify-content: center;
 }
 
-.overview-header-content
-{
+.overview-header-content {
     background-color: gray;
     border: 5px solid black;
-    height: 150px;
     width: 50%;
+    height: 1000px;
     border-radius: 50px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
     flex-direction: column;
 }
 
@@ -431,16 +469,16 @@ p
     align-items: center;
     justify-content: center;
     border: 2px solid black;
+    margin-bottom: 5px;
 }
 
 .button-link
-{
-    
+{  
     text-decoration: none; /* Removes the underline */
     color: inherit; /* Keeps the color of the text the same as the parent element */
 }
 
-.overview-header-content img
+.overview-header-content
 {
     height: 125px;
 }
@@ -464,8 +502,8 @@ p
 {
     background-color: gray;
     border: 5px solid black;
-    height: 60%;
-    width: 80%;
+    height: 40vw;
+    width: 80vw;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -476,11 +514,12 @@ p
 .about-pic
 {
     border-radius: 50px;
-    height: 90%;
-    width: 30%;
+    height: 85%;
+    width: auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 10px;
     /*background-color: black;*/
 }
 
@@ -527,15 +566,7 @@ p
     {
         text-align: center;
     }
-    li
-    {
-        font-size:larger;
-        margin: 5p;
-    }
-    p
-    {
-        font-size: large;
-    }
+
 }
 
 .about-title
@@ -700,5 +731,71 @@ p
     #toolbar img
     {
         height: 125px;
+    }
+
+
+
+  }
+
+  @media(max-width: 870px)
+  {
+    .content-block
+    {
+        flex-wrap: wrap;
+    }
+
+    .content-icon
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about-content
+    {
+        flex-wrap: wrap;
+        height: 50vh;
+    }
+
+    .about-content
+    {
+        height: 80vw;
+        width: 80vw;
+    }
+
+    .reverse
+    {
+        flex-direction: row;
+    }
+
+    .content-icon img
+    {
+        width: 150px;
+    }
+
+    .dirt
+    {
+        height: 2600px;
+    }
+  }
+
+  @media (max-width: 900px)
+  {
+    .footer-main
+    {
+
+        height: 50vh;
+        bottom: -0vh;
+    }
+
+    .portal
+    {
+        width: 90px;
+    }
+
+    .forest
+    {
+        height: 1000px;
     }
   }

@@ -180,7 +180,7 @@ window.addEventListener('DOMContentLoaded', function() {
   // Start the first rotation to 2 o'clock
   rotateImages();
   // Set intervals for subsequent rotations
-  setInterval(rotateImages, 2000); // Adjust the timing as needed (2000ms = 2 seconds)
+  setInterval(rotateImages, 1000); // Adjust the timing as needed (2000ms = 2 seconds)
 });
 
 // Get modal element

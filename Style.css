@@ -57,10 +57,6 @@ p
     margin-right: 5px;
 }
 
-.main-container
-{
-    background-color: aqua;
-}
 
 /* Reset margins and padding */
 .cma-logo html, body 
@@ -196,7 +192,6 @@ p
     background-color: gray;
     border: 5px solid black;
     height: 25vh;
-    min-width: 450px;
     width: 100%;
     border-radius: 50px;
     display: flex;
@@ -212,7 +207,7 @@ p
     flex-direction: row;
     justify-content: center;
     align-items: center; /* Ensure vertical centering */
-    width: 100%; /* Ensure full container width usage */
+    width: 45%; /* Ensure full container width usage */
     height: 100%;
     
 }
@@ -233,14 +228,14 @@ p
 
 .vertical-spacer
 {
-    width: 5px;
+    width: 0.5%;
     height: 100%;
     background-color: black;
 }
 
 .vertical-spacer-small
 {
-    width: 5px;
+    width: 0.5%;
     height: 250px;
     background-color: black;
     margin: 25px;
@@ -502,7 +497,7 @@ p
 {
     background-color: gray;
     border: 5px solid black;
-    height: 40vw;
+    height: auto;
     width: 80vw;
     border-radius: 50px;
     display: flex;
@@ -514,7 +509,7 @@ p
 .about-pic
 {
     border-radius: 50px;
-    height: 85%;
+    height:30vw;
     width: auto;
     display: flex;
     align-items: center;
@@ -571,7 +566,6 @@ p
 
 .about-title
 {
-    background-color: green;
     width: 95%;
     height: 25%;
     display: flex;
@@ -590,7 +584,6 @@ p
 
 .about-summary
 {
-    background-color: gold;
     height: 75%;
     width: 95%;
     
@@ -598,7 +591,6 @@ p
 
 .about-list
 {
-    background-color: silver;
     height: 50%;
     width: 95%;
     display: flex;
@@ -610,7 +602,6 @@ p
 
 .about-points
 {
-    background-color: aqua;
     height: 75%;
     width: 100%;
     display: flex;
@@ -719,6 +710,7 @@ p
       {
           top: 48%;
       }
+
   }
 
   @media(max-width: 720px)
@@ -733,8 +725,43 @@ p
         height: 125px;
     }
 
+    
+    .content
+    {
 
+        height: auto;
+    }
 
+    .content-info{
+        flex-wrap: wrap;
+    }
+
+    #jams-content
+    {
+        flex-wrap: nowrap;
+    }
+
+    .circle-link
+    {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .jam-icon
+    {
+        height: 20vw;
+        width: 20vw;
+    }
+
+    .content-text
+    {
+        align-items: center;
+    }
+
+    .vertical-spacer
+    {
+        height: auto;
+    }
   }
 
   @media(max-width: 870px)
@@ -755,13 +782,12 @@ p
     .about-content
     {
         flex-wrap: wrap;
-        height: 50vh;
     }
 
-    .about-content
+    .about-descripition
     {
-        height: 80vw;
-        width: 80vw;
+        flex-wrap: wrap;
+        flex-direction: row;
     }
 
     .reverse
@@ -776,7 +802,7 @@ p
 
     .dirt
     {
-        height: 2600px;
+        height: 2300px;
     }
   }
 

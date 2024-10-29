@@ -446,12 +446,13 @@ p
     background-color: gray;
     border: 5px solid black;
     width: 50%;
-    height: 1000px;
+    height: 40px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    text-align: center;
 }
 
 .button
@@ -749,8 +750,8 @@ p
 
     .jam-icon
     {
-        height: 20vw;
-        width: 20vw;
+        height: 15vw;
+        width: 15vw;
     }
 
     .content-text
@@ -810,7 +811,7 @@ p
     {
         justify-content: center;
         align-items: center;
-        width: 40%;
+        width: 20%;
         text-align: center;
     }
 

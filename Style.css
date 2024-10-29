@@ -379,7 +379,7 @@ p
     transform: translateY(-50%); /* Center vertically */
     display: flex;
     justify-content: center;
-    gap: 15vw; /* Adjust for spacing between portals */
+    gap: 15vw; /* Adjust for spacing between portals test */
 }
 
 .portal
